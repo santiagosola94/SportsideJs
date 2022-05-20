@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportSide | Indumentaria Deportiva</title>
+    <meta name="keywords" content="sportside, e-commerce, camisetas, remeras, botines, running">
+    <meta name="description"
+        content="Sportside - Camisetas de Argentina, Boca, River, PSG, Botines Nike, Adidas, Puma, Ropa Deportiva, running, zapatillas">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/destino.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header class="container-fluid estiloHeader bgColorPlate">
+        <h1 class="alMedio">Sportside | Indumentaria Deportiva</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bgColorAzul" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">SportSide |</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav text-muted" aria-current="page"
+                            href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra active hoverNav" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav text-muted" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav text-muted" href="./sobrenosotros.html">Sobre
+                            Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav text-muted" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid py-1 bgcMain">
+        <div id="arriba" class="container-fluid bgcIndice my-0">
+        </div>
+        <section class="estiloIndice borderBottom">
+            <h2 class="estiloIndiceTitulo py-2 alMedio">Indice de nuestros productos</h2>
+            <div>
+                <ul class="estiloIndiceUl">
+                    <li class="alMedio"><a href="#camisetas" class="hoverLi">Seccion Camisetas Deportivas</a></li>
+                    <li class="alMedio"><a href="#botines" class="hoverLi">Seccion Botines</a></li>
+                    <li class="alMedio"><a href="#ropaDeportiva" class="hoverLi">Seccion Ropa Deportiva</a></li>
+                </ul>
+                <div class="alMedio estiloOrdenarPor">
+                    <label for="mostrarProductos">Filtro De productos</label>
+                    <select id="mostrarProductos">
+                        <optgroup label="Filtrar Productos por:">
+                            <option value="mostrarTodo">Mostrar Todo</option>
+                            <option value="soloCamisetas">Mostrar Solo Camisetas</option>
+                            <option value="soloBotines">Mostrar Solo Botines</option>
+                            <option value="soloRopaDeportiva">Mostrar Solo Ropa Deportiva</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="camisetas">
+            <div class="estiloTarjeta1 alMedio my-2 py-2 container-fluid w-100">
+                <h3>Seccion Camisetas</h3>
+                <button id="ordenarCamisetasCreciente" class="botonOrdenarPor">Ordenar de Mayor a Menor</button>
+                <button id="ordenarCamisetasDecreciente" class="botonOrdenarPor">Ordenar de Menor a Mayor</button>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="camisetasPorJS">
+            </div>
+            <div class="estiloTarjeta1 alMedio my-2 py-2 container-fluid w-100">
+                <a href="#arriba" class="estiloArriba">Click para ir arriba</a>
+            </div>
+        </section>
+
+        <section id="botines">
+            <div class="estiloTarjeta2 alMedio my-2 py-2 container-fluid w-100">
+                <h3>Seccion Botines</h3>
+                <button id="ordenarBotinesCreciente" class="botonOrdenarPor">Ordenar de Mayor a Menor</button>
+                <button id="ordenarBotinesDecreciente" class="botonOrdenarPor">Ordenar de Menor a Mayor</button>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="botinesPorJS">
+            </div>
+            <div class="estiloTarjeta2 alMedio my-2 py-2 container-fluid w-100">
+                <a href="#arriba" class="estiloArriba">Click para ir arriba</a>
+            </div>
+        </section>
+        <section id="ropaDeportiva">
+            <div class="estiloTarjeta3 alMedio my-2 py-2 container-fluid w-100">
+                <h3>Seccion Ropa Deportiva</h3>
+                <button id="ordenarRopaDeportivaCreciente" class="botonOrdenarPor">Ordenar de Mayor a Menor</button>
+                <button id="ordenarRopaDeportivaDecreciente" class="botonOrdenarPor">Ordenar de Menor a Mayor</button>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4" id="ropaDeportivaPorJS">
+        </section>
+        <div class="estiloTarjeta3 alMedio my-2 py-2 container-fluid w-100">
+            <a href="#arriba" class="estiloArriba">Click para ir arriba</a>
+        </div>
+    </main>
+
+    <footer class="container-fluid bgcfooter py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Terminos y
+                    Condiciones</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Envios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Devoluciones</a></li>
+        </ul>
+        <p class="text-center">SportSide &copy; 2022 </p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>

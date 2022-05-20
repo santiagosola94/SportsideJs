@@ -1,0 +1,53 @@
+/* Animaciones */
+
+.tituloAnimado {
+    animation-name: tituloAnimado;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes tituloAnimado {
+    0% {
+        transform: translatex(-1000px);
+        opacity: 0;
+    }
+    20% {
+        transform: translatex(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translatex(0px);
+        transform: rotateX(170deg);
+        opacity: 1;
+    }
+    80% {
+        transform: translatex(1000px);
+        opacity: 0;
+    }
+    90% {
+        transform: translate(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.navAnimado {
+animation-name: navAnimado;
+animation-duration: 5s;
+animation-iteration-count: 1;
+}
+
+@keyframes navAnimado {
+    from {
+        opacity: 0;
+        transform: translate(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+

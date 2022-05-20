@@ -1,0 +1,150 @@
+[
+    [
+        {
+            "imagenDelProducto": "../images/camisetasfutbol/camisetas_w416-min.jpg",
+            "alt": "camisetaPSG",
+            "tituloCard": "Camiseta PSG",
+            "textoCard": "Camiseta marca NIKE del Paris Saint Germain de Francia",
+            "precio": 10000,
+            "botonID": "agregarPSG",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+        },
+        {
+            "imagenDelProducto": "../images/CamisetasFutbol/CamisetaBoca-min.jpg",
+            "alt": "camisetaBoca",
+            "tituloCard": "Camiseta Boca Juniors",
+            "textoCard": "Camiseta marca Adidas de Boca Juniors de Argentina.",
+            "precio": 19999,
+            "botonID": "agregarBoca",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+
+        },
+        {
+            "imagenDelProducto": "../images/CamisetasFutbol/camisetaRiver-min.jpg",
+            "alt": "camisetaRiver",
+            "tituloCard": "Camiseta River Plate",
+            "textoCard": "Camiseta marca Adidas, River Plate de Argentina.",
+            "precio": 18500,
+            "botonID": "agregarRiver",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+        },
+        {
+            "imagenDelProducto": "../images/CamisetasFutbol/acMilan-min.jpg",
+            "alt": "camisetaACMilan",
+            "tituloCard": "Camiseta AC Milan",
+            "textoCard": "Camiseta local, marca Puma, del club A.C. Milan de Italia .",
+            "precio": 20500,
+            "botonID": "agregarMilan",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+        },
+        {
+            "imagenDelProducto": "../images/CamisetasFutbol/CamisetaBarcelona-min.jpg",
+            "alt": "camisetaBarcelona",
+            "tituloCard": "Camiseta Barcelona FC",
+            "textoCard": "Camiseta marca Nike del club Barcelona FC de España.",
+            "precio": 21000,
+            "botonID": "agregarBarcelona",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+        },
+        {
+            "imagenDelProducto": "../images/CamisetasFutbol/CamisetaChelsea-min.jpg",
+            "alt": "camisetaChelsea",
+            "tituloCard": "Camiseta Chelsea FC",
+            "textoCard": "Camiseta marca Nike del club Chelsea FC de Inglaterra.",
+            "precio": 17999,
+            "botonID": "agregarChelsea",
+            "botonClass": "estiloBotonCamisetas",
+            "classContenedorDiv":"card estiloTarjeta1"
+        }
+    ],
+    [
+        {
+            "imagenDelProducto": "../images/Botines/D_NQ_NP_878913-MLA47274918565_082021-O-min.jpg",
+            "alt": "botinesAdidas",
+            "tituloCard": "Adidas Predator",
+            "textoCard": "Botines marca Adidas. Especiales para futbol sintetico",
+            "precio": 24999,
+            "botonID": "agregarPredator",
+            "botonClass": "estiloBotonBotines",
+            "classContenedorDiv":"card estiloTarjeta2 height100"
+        },
+        {
+            "imagenDelProducto": "../images/Botines/PREDATOR_MUTATOR_20-min.jpg",
+            "alt": "botinesPredatorMutator",
+            "tituloCard": "Adidas Mutator",
+            "textoCard": "Botines marca Adidas. Especialmente diseñado para Futbol 11.",
+            "precio": 27500,
+            "botonID": "agregarMutator",
+            "botonClass": "estiloBotonBotines",
+            "classContenedorDiv":"card estiloTarjeta2 height100"
+        },
+        {
+            "imagenDelProducto": "../images/Botines/PumaFutureZ4.1-min.jpg",
+            "alt": "botinesPumaFuture",
+            "tituloCard": "Puma Future Z4",
+            "textoCard": "Botines marca Puma, con tapones para futbol sintetico.",
+            "precio": 21999,
+            "botonID": "agregarFutureZ4",
+            "botonClass": "estiloBotonBotines",
+            "classContenedorDiv":"card estiloTarjeta2 height100"
+        },
+        {
+            "imagenDelProducto": "../images/Botines/nike-botas-futbol-phantom-gt2-academy-df-fg-mg-min.jpg",
+            "alt": "botinesNikePhantom",
+            "tituloCard": "Nike Phantom GT2",
+            "textoCard": "Botines nike. Disponible para futbol 11 y sintetico.",
+            "precio": 29999,
+            "botonID": "agregarPhantomGT2",
+            "botonClass": "estiloBotonBotines",
+            "classContenedorDiv":"card estiloTarjeta2 height100"
+        },
+        {
+            "imagenDelProducto": "../images/Botines/NikePhantomVision2Pro-min.jpg",
+            "alt": "botinesNikePhantomVision2",
+            "tituloCard": "Nike Phantom Vision",
+            "textoCard": "Botines Nike. Disponibilidad unica para futbol 11.",
+            "precio": 31999,
+            "botonID": "agregarPhantomVision",
+            "botonClass": "estiloBotonBotines",
+            "classContenedorDiv":"card estiloTarjeta2 height100"
+        }
+    ],
+    [
+        {
+            "imagenDelProducto": "../images/conjuntosdeportivos/Sweater-negro-min.jpg",
+            "alt": "sweaterNegro",
+            "tituloCard": "Conjunto Deportivo Puma",
+            "textoCard": "Conjunto deportivo marca Puma. Contiene Buzo y pantalon deportivo.",
+            "precio": 19999,
+            "botonID": "agregarConjuntoPuma",
+            "botonClass": "estiloBotonRopa",
+            "classContenedorDiv":"card estiloTarjeta3 height100"
+        },
+        {
+            "imagenDelProducto": "../images/ConjuntosDeportivos/5a969fb350110-447679-500x500-min.jpg",
+            "alt": "conjuntoDeportivoTopper",
+            "tituloCard": "Conjunto Deportivo Topper",
+            "textoCard": "Conjunto deportivo Topper. Contiene campera y pantalon deportivo.",
+            "precio": 22999,
+            "botonID": "agregarConjuntoTopper",
+            "botonClass": "estiloBotonRopa",
+            "classContenedorDiv":"card estiloTarjeta3 height100"
+        },
+        {
+            "imagenDelProducto": "../images/ConjuntosDeportivos/Conjunto_Deportivo_3_Tiras_Negro_DV2448_01_laydown-min.jpg",
+            "alt": "conjuntoDeportivoAdidas",
+            "tituloCard": "Conjunto deportivo Adidas",
+            "textoCard": "Conjunto deportivo Adidas. Contiene buzo y pantalon deportivo.",
+            "precio": 24999,
+            "botonID": "agregarConjuntoAdidas",
+            "botonClass": "estiloBotonRopa",
+            "classContenedorDiv":"card estiloTarjeta3 height100"
+        }
+    ]
+]
+

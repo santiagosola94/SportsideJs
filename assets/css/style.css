@@ -1,0 +1,144 @@
+body {
+    height: 100vh;
+}
+
+/* Estilos Header */
+.estiloHeader {
+    margin: 0px;
+}
+
+/* Estilos Nav */
+.bgColorAzul {
+    background-color: #083D77;
+}
+.bgColorPlate {
+    background-color: #EBEBD3;
+    margin: 0;
+    padding: 1%;
+    color: #083D77;
+}
+
+.hoverNav:hover {
+    background-color: #032b55;
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #6c757d;
+}
+
+/* Estilos Main */
+.bgcIframe {
+    background-image: linear-gradient(#083D77, black);
+    color: #EBEBD3;
+    padding: 10px;
+}
+.heightIframe {
+    height: 50vh;
+}
+
+.marginIframe {
+    margin: 0px;
+}
+
+.bordeSection {
+    border-bottom: 2px solid #6c757d;
+    border-top:2px solid #6c757d;
+    margin: 10px 0px;
+}
+.bcgSection {
+    background-color: #083D77;
+    color: white;
+}
+.bgcMain {
+    background-color: #EBEBD3;
+}
+.bgcIndice {
+    background-image: url(../images/Sportside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+}
+.estiloIndiceTexto {
+    text-decoration: none;
+}
+.estiloIndiceUl {
+    list-style-type: none;
+}
+.estiloIndiceTitulo {
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+.estiloIndice {
+    background-color: #c8ced4;
+
+}
+
+
+.estiloTarjeta {
+    background-color: #083D77;
+    color: white;
+}
+.estiloTarjeta2 {
+    background-color: #8a0916;
+    color: white;
+}
+.estiloTarjeta3 {
+    background-color: rgb(112, 1, 156);
+    color: white;
+}
+
+.estiloArriba {
+    text-decoration: none;
+    color: white;
+}
+
+.estiloBoton {
+    background-color: white;
+    color: black
+}
+
+/* Estilos Footer */
+
+.bgcfooter {
+    background-color: #083D77;
+    color: rgb(211, 211, 211);
+}
+
+.hoverFooter:hover {
+    color: white;
+    background-color: #032b55;
+}
+
+.colorLetra {
+    color:dimgrey;
+}
+
+/* Estilo de Texto */
+
+.alMedio {
+    text-align: center;
+}
+
+.aLaDerecha {
+    text-align: right;
+}
+/* Estilo Carrusel */
+.slide img {
+    height: 80vh;
+}
+
+/* Estilos Varios */
+.active {
+    color: #EBEBD3;
+}
+
+.bgcSeccionProductos1 {
+    background-color: rgb(255, 251, 1);
+}
+
+.test {
+    padding-left: 0px;
+
+}

@@ -1,0 +1,108 @@
+/***************************** 
+- Estilo Tarjetas Productos  -
+******************************/
+$estiloBgcTarjetaIndex: #083D77;
+$estilocolorTarjetaIndex: white;
+
+$estiloBotonTarjetaFondo: white;
+$estiloBotonTarjetaTexto: black;
+
+$estiloBgcTarjeta1: #083D77;
+$estiloColorTextoTarjeta1: white;
+
+$estiloBgcTarjeta2: #8a0916;
+$estiloColorTextoTarjeta2: white;
+
+$estiloBgcTarjeta3: (rgb(112, 1, 156));
+$estiloColorTextoTarjeta3: white;
+
+/* Estilo de las tarjetas de Index.html */
+
+.estiloTarjetaIndex {
+    background-color: $estiloBgcTarjetaIndex;
+    color: $estilocolorTarjetaIndex;
+}
+
+.estiloBotonTarjeta {
+    background-color: $estiloBotonTarjetaFondo;
+    color: $estiloBotonTarjetaTexto;
+}
+
+
+/*maps*/
+$coloresTarjeta: (colorDeFondo1: #083D77,
+    colorDeFondo2: #083D77,
+    colorDeFondo3: #083D77,
+    colorDeFondo4: #083D77,
+    colorDeFondo5: #083D77,
+);
+
+$texto: (color1: white);
+
+@each $clase,
+$colorcito in $coloresTarjeta {
+    .#{$clase} {
+        background-color: $colorcito;
+        color: white;
+    }
+}
+
+
+
+
+/* Mixing de las tarjetas de productos.html*/
+
+@mixin tarjetas($backgroundTarjeta, $colorTarjeta) {
+    background-color: $backgroundTarjeta;
+    color: $colorTarjeta;
+}
+
+.estiloTarjeta1 {
+    @include tarjetas($estiloBgcTarjeta1, $estiloColorTextoTarjeta1)
+}
+
+.estiloTarjeta2 {
+    @include tarjetas($estiloBgcTarjeta2, $estiloColorTextoTarjeta2)
+}
+
+.estiloTarjeta3 {
+    @include tarjetas ($estiloBgcTarjeta3, $estiloColorTextoTarjeta3)
+}
+
+.fondoPrecio {
+    border: 4px solid white;
+    background-color: rgb(2, 2, 10);
+    color: rgb(252, 252, 253);
+}
+
+.height100 {
+    height: 100%;
+}
+
+/***************************************
+Estilos de botones (productos.html)
+****************************************/
+.estiloBotonCamisetas, .estiloBotonBotines, .estiloBotonRopa {
+    background: #07fef3;
+    background: linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+    background: -webkit-linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+    background: -moz-linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+    border-radius: 5px;
+    height: 6vh;
+    color: white;
+    border: 2px solid black;
+
+    &:hover {
+        background: #07fef3;
+        color: black;
+        
+    }
+}
+
+.botonAgregadoAlcarrito {
+    background-color: #07fef3;
+    border-radius: 5px;
+    height: auto;
+    color: black;
+    border: 2px solid black;
+}

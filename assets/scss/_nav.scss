@@ -1,0 +1,34 @@
+/***************************** 
+-        Estilo Nav          -
+******************************/
+.bgColorAzul {
+    background-color: $colorPrincipal;
+}
+
+.hoverNav:hover {
+    background-color: $colorHoverNav;
+    color: $colorBlanco !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $colorLetraNav;
+}
+
+.colorLetra {
+    color: $colorLetraNav;
+}
+
+.iconoCarrito {
+    height: 100%;
+}
+
+.iconoCarrito:hover {
+    background-color: $colorHoverNav;
+}
+
+/* Media query para esconder el icono carrito en version mobile */
+@media (max-width: 480px) {
+    .iconoCarrito {
+        display: none;
+    }
+}

@@ -1,0 +1,87 @@
+.estiloThead {
+    background-color: $colorPrincipal;
+    color: white;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
+.th {
+    background-color: $colorPrincipal;
+    color: white;
+    margin: 20px;
+}
+
+
+.estilosTr {
+    background-color: rgba(241, 241, 241, 0.801);
+
+}
+
+.contenedorCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/4621939-min.jpg);
+    background-attachment: fixed;
+
+}
+
+.estilosTabla {
+    box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+}
+
+.estiloOrdenarPor {
+    background-color: rgba(0, 0, 0, 0.849);
+    margin: 10px 0px;
+    color: white;
+    padding: 10px;
+}
+
+.botonOrdenarPor {
+    border: 3px solid black;
+    color: black;
+    border-radius: 10px;
+    background: #05445e;
+    background: linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+    background: -webkit-linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+    background: -moz-linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+
+}
+
+.botonOrdenarPor:hover {
+    color: rgb(255, 255, 255);
+    transition: 2s;
+}
+
+.estilosBotonCantidadMas{
+    height: 28px;
+    width: 28px;
+    background-color: rgb(15, 204, 15);
+    color: black;
+}
+.estilosBotonCantidadMenos{
+    height: 28px;
+    width: 28px;
+    background-color: red;
+    color: white;
+}
+
+.estilosDivCheckout {
+    border: 3px solid black;
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.849);
+    margin: 10px 0px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

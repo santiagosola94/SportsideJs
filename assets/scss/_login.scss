@@ -1,0 +1,72 @@
+.flexing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.backgroundLogin {
+    background-image: url(../images/4621939-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.estiloLoginTarjeta {
+    border: 2px solid black;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .formTitle h2 {
+        background-color: #083D77;
+        color: white;
+        width: 100%;
+        font-size: large;
+    }
+    .inputLogin {
+        border: 1px solid #083D77;
+        width: 100%;
+    }
+    .textoInput {
+        color: black;
+        padding: 5px 0px;
+    }
+}
+
+.estiloBotonLogin {
+    background-color: #083D77;
+    width: 50%;
+    color: white;
+    &:hover {
+        background-color: $colorHoverNav;
+    }
+}
+
+.imagenLogoLogin {
+    background-image: url(../images/logo/Sporsidev2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    height: 400px;
+    width: 40%;
+}
+
+.styleLogin {
+    background-color: rgba(253, 117, 6, 0.452);
+    height: 400px;
+}
+
+@media (max-width:600px) {
+    .estiloLoginTarjeta {
+        border: 2px solid black;
+        width: 80%;
+    }
+    .imagenLogoLogin {
+        display: none;
+    }
+}

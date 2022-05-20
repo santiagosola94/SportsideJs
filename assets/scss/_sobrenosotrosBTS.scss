@@ -1,0 +1,97 @@
+/* Estilos Banner Sportside (foto negra despues del nav)*/
+.tituloNosotros {
+    background-image: url(../images/logo/SportsideNew.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40vh;
+    background-color: black;
+}
+
+/* Estilos tarjeta quienes somos */
+
+.fondoQuienesSomos {
+    background-image: url(../images/imgnosotros/keefikus-t3b5i6gibHo-unsplash-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .quienesSomos {
+        border: 2px solid black;
+        border-radius: 1px;
+        height: 60vh;
+        padding: 10px 0px;
+        color: white;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.61);
+    }
+    .fondoH2 {
+        background-color: $colorPrincipal;
+        padding: 10px 0px;
+    }
+    .estiloTextoQuienesSomos {
+        padding: 10px 10px;
+    }
+}
+
+
+/* Estilos Objetivo Sobre Nosotros */
+.objetivoSobreNosotros {
+    background-image: url(../images/imgnosotros/andrea-leopardi-QVD3Xht9txA-unsplash-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .quienesSomos {
+        border: 2px solid black;
+        border-radius: 1px;
+        height: 60vh;
+        padding: 10px 0px;
+        color: white;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.61);
+    }
+    .fondoH2 {
+        background-color: $colorPrincipal;
+        padding: 10px 0px;
+    }
+    .estiloTextoQuienesSomos {
+        padding: 10px 10px;
+    }
+}
+
+
+/* ESTILOS ASIDE SOBRE NOSOTROS  */
+.publiNosotros {
+    background-image: url(../images/logo/Sportside-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+@media (max-width: 500px) {
+    .publiNosotros {
+    background-image: url(../images/logo/Sportside-banner320.png);
+    }
+}
+
+@media (max-width: 600px) {
+    .fondoQuienesSomos .quienesSomos {
+        width: 95%;
+        height: auto;
+    }
+    .objetivoSobreNosotros .quienesSomos {
+        width: 95%;
+    }
+}

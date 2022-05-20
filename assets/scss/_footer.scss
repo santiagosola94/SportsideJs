@@ -1,0 +1,27 @@
+/***************************** 
+-      Estilo Footer       -
+******************************/
+$estiloBgcFooter: #083D77;
+$estiloTextoFooter: (rgb(211, 211, 211));
+$estiloBgcHoverFooter: #032b55;
+$estiloHoverFooter: white;
+
+
+.bgcfooter {
+    background-color: $colorPrincipal;
+    color: $estiloTextoFooter;
+}
+
+
+
+.textoFooter {
+    color: $colorLetraNav;
+    &:hover {
+        color: $estiloHoverFooter;
+        background-color: $estiloBgcHoverFooter;
+    }
+}
+
+.nav-link:focus {
+    color: $colorBlanco;
+}

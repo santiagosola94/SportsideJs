@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportSide | Sobre Nosotros</title>
+    <meta name="keywords" content="sportside, mision, vision, objetivo, clientes">
+    <meta name="description" content="Sportside - Sobre Nosotros, a que nos dedicamos, vision, mision, objetivo">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/destino.css">
+    <script src="https://kit.fontawesome.com/ca0229bd6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid estiloHeader bgColorPlate">
+        <h1 class="alMedio">Sportside | Indumentaria Deportiva</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bgColorAzul" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">SportSide |</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" aria-current="page" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra active hoverNav" href="./carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="contenedorCarrito">
+            <div>
+                <div class="estiloOrdenarPor alMedio">
+                    <label for="ordenar">Ordenar por:</label>
+                    <select name="" id="ordenar">
+                        <optgroup label="Ordenar por precio:">
+                            <option value="" selected disabled>Elige una Opcion</option>
+                            <option value="ordenarMayor" id="mayor">Mayor a Menor</option>
+                            <option value="ordenarMenor" id="menor">Menor a Mayor</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <table class="alMedio w-100 estilosTabla">
+                    <thead>
+                        <tr class="">
+                            <th class="th">Codigo</th>
+                            <th class="th">Imagen</th>
+                            <th class="th">Nombre del Producto</th>
+                            <th class="th">Precio Unitario</th>
+                            <th class="th">Cantidad</th>
+                            <th class="th">Total</th>
+                            <th class="th">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenidoCarrito" class="estilosTr">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="th">Longitud del carrito</th>
+                            <th class="th" id="carritoLength"></th>
+                            <th class="th"></th>
+                            <th class="th"></th>
+                            <th class="th">El precio total es de:</th>
+                            <th class="th" id="precioFinal"></th>
+                            <th class="th"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="estiloOrdenarPor alMedio">
+                    <button id="botonVaciar" class="btn-primary">Vaciar Carrito</button>
+                    <button id="botonComprar" class="btn-danger">Comprar</button>
+                </div>
+            </div>
+            <div id="datosCheckout">
+
+            </div>
+        </section>
+        <section id="ea">
+
+        </section>
+
+    </main>
+    <footer class="container-fluid bgcfooter py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Terminos y
+                    Condiciones</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Envios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Devoluciones</a></li>
+        </ul>
+        <p class="text-center">SportSide &copy; 2022 </p>
+    </footer>
+
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

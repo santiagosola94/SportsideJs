@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportSide | Contacto</title>
+    <meta name="keywords" content="sporside, contacto, reclamos, devoluciones, legales">
+    <meta name="description"
+        content="Sportside - Contacto, devoluciones, terminos y condiciones, reclamos, sugerencias, comentarios">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/destino.css">
+</head>
+
+<body>
+    <header class="container-fluid estiloHeader bgColorPlate">
+        <h1 class="alMedio">Sportside | Indumentaria Deportiva</h1>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bgColorAzul" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">SportSide |</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" aria-current="page" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra active hoverNav" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLetra hoverNav" href="./carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container-fluid imagenFondo">
+        </div>
+        <div>
+            <div class="estilosContacto">
+                <form class="interlineado alMedio estilosFormulario" action="">
+                    <fieldset>
+                        <legend class="styleTitulo subrayado">Ingrese sus datos</legend>
+                        <input class="estiloInput" type="text" name="nombre" placeholder="Nombre" id="nombre"><br>
+                        <input class="estiloInput" type="text" name="apellido" placeholder="Apellido" id="apellido"><br>
+                        <input class="estiloInput" type="email" name="email" placeholder="Email" id="emailContacto"><br>
+                        <div class="styleContentForm">
+                            <span>¿Desea recibir el newsletter?</span>
+                            <input type="checkbox" name="Acepta" id="suscripcion"><br>
+                        </div>
+                        <div class="styleContentForm borderDeSeparacion">
+                            <p>Tipo de Tramite</p>
+                            <select name="tipo de tramite" id="tramite">
+                                <option value="" selected disabled>Ingrese el tipo de Tramite</option>
+                                <option value="Comentarios">Comentarios</option>
+                                <option value="Reclamos">Reclamos</option>
+                                <option value="Sugerencias">Sugerencias</option>
+                                <option value="Devoluciones">Devoluciones</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="styleContentForm">
+                            <label for="consulta">Ingresa tu consulta aqui</label><br>
+                            <textarea id="textoConsulta" class="estiloInput" name="consulta" placeholder="Comentarios y/o consultas" cols="30" rows="10" maxlength="300"></textarea><br>
+                        </div>
+                        <input class="styleButton" type="reset" value="Limpiar datos">
+                        <input class="styleButton" type="submit" value="Enviar" id="enviarDatos">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="container-fluid bgcfooter py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Terminos y
+                    Condiciones</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Envios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 textoFooter hoverFooter">Devoluciones</a></li>
+        </ul>
+        <p class="text-center">SportSide &copy; 2022 </p>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

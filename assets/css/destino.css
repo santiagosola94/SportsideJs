@@ -1,0 +1,820 @@
+/***************************** 
+-   Colores: Header y Main   -
+******************************/
+/***************************** 
+-        Estilo Header          -
+******************************/
+.estiloHeader {
+  margin: 0px;
+  background-color: #083D77;
+  margin: 0;
+  padding: 1%;
+  color: white;
+}
+
+/***************************** 
+-        Estilo Nav          -
+******************************/
+.bgColorAzul {
+  background-color: #083D77;
+}
+
+.hoverNav:hover {
+  background-color: #032b55;
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: dimgrey;
+}
+
+.colorLetra {
+  color: dimgrey;
+}
+
+.iconoCarrito {
+  height: 100%;
+}
+
+.iconoCarrito:hover {
+  background-color: #032b55;
+}
+
+/* Media query para esconder el icono carrito en version mobile */
+@media (max-width: 480px) {
+  .iconoCarrito {
+    display: none;
+  }
+}
+/***************************** 
+-        Estilo Main          -
+******************************/
+/* Estilo Carrusel */
+.slide img {
+  height: 80vh;
+}
+
+@media (max-width: 480px) {
+  .slide img {
+    height: 50vh;
+  }
+}
+.estiloCarousel {
+  margin: 20px 5%;
+  padding: 20px 0px;
+  border-bottom: 2px solid #463e3e;
+  border-top: 2px solid #463e3e;
+}
+
+.marginSportside {
+  margin: 0px;
+}
+
+/* Seccion iframe*/
+.contenedorIframe {
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.contenedorIframe .flexContenedorIframe {
+  grid-area: iframe;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 20px 0px;
+  color: white;
+}
+.contenedorIframe .flexContenedorIframe .heightIframe {
+  height: 50vh;
+}
+
+/* Seccion SportSide Indumentaria Deportiva - {Div separador del carrusel}  (Index.html) */
+.bcgSection {
+  background-color: #083D77;
+  color: white;
+  margin: 20px 5%;
+  box-shadow: 12px 11px 39px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 11px 39px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 11px 39px -8px rgba(0, 0, 0, 0.75);
+}
+
+/* Estilos Main */
+.bgcMain {
+  background-image: url(../images/imgseccionindex/janosch-diggelmann-vKk7thmr9Mc-unsplash-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/******************************* 
+Estilos index: boton + secciones 
+*******************************/
+.contenedor {
+  margin: 1vh 5%;
+}
+
+.estiloBotonIndex {
+  height: 7vh;
+  background-image: linear-gradient(#eb672a, red);
+  box-shadow: 12px 11px 46px -8px rgba(255, 5, 5, 0.75);
+  -webkit-box-shadow: 12px 11px 46px -8px rgba(255, 5, 5, 0.75);
+  -moz-box-shadow: 12px 11px 46px -8px rgba(255, 5, 5, 0.75);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.estiloBotonIndex:hover {
+  color: black;
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-areas: "camisetas camisetas" "botines botines" "ropaDeportiva ropaDeportiva" "running running";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.contenidoArticle1 {
+  grid-area: camisetas;
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "texto imagen";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  border-top: 2px solid #463e3e;
+  border-bottom: 1px solid #463e3e;
+}
+.contenidoArticle1 .textoArticleUno {
+  grid-area: texto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  padding: 10px;
+}
+.contenidoArticle1 .textoArticleUno h2 {
+  color: white;
+  text-align: center;
+}
+.contenidoArticle1 .imagenArticleUno {
+  grid-area: imagen;
+  background-image: url(../images/imgseccionindex/seccionCamisetas-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenidoArticle2 {
+  grid-area: botines;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "imagen texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  border-top: 1px solid #463e3e;
+  border-bottom: 1px solid #463e3e;
+}
+.contenidoArticle2 .imagenArticleDos {
+  grid-area: imagen;
+}
+.contenidoArticle2 .textoArticleDos {
+  background-color: rgba(0, 0, 0, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contenidoArticle2 .textoArticleDos h2 {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .imagenArticleDos {
+    background-image: url(../images/imgseccionindex/botinesMessi-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .imagenArticleDos {
+    background-image: url(../images/imgseccionindex/botinesTable-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 769px) {
+  .imagenArticleDos {
+    background-image: url(../images/imgseccionindex/botinesMessi-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.contenidoArticle3 {
+  grid-area: ropaDeportiva;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "texto imagen";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  border-top: 1px solid #463e3e;
+  border-bottom: 1px solid #463e3e;
+}
+.contenidoArticle3 .imagenArticleTres {
+  grid-area: imagen;
+  background-image: url(../images/imgseccionindex/conjunto2-min.jpg);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contenidoArticle3 .textoArticleTres {
+  grid-area: texto;
+  background-color: rgba(0, 0, 0, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contenidoArticle3 .textoArticleTres h2 {
+  color: white;
+}
+
+.contenidoArticle4 {
+  grid-area: running;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "imagen texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  border-top: 1px solid #463e3e;
+  border-bottom: 2px solid #463e3e;
+}
+.contenidoArticle4 .textoArticleCuatro {
+  grid-area: texto;
+  background-color: rgba(0, 0, 0, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contenidoArticle4 .textoArticleCuatro h2 {
+  color: white;
+}
+.contenidoArticle4 .imagenArticleCuatro {
+  grid-area: imagen;
+  background-image: url(../images/imgseccionindex/chander-r-z4WH11FMfIQ-unsplash-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.colorDeTexto {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .contenidoArticle1,
+.contenidoArticle2,
+.contenidoArticle3,
+.contenidoArticle4 {
+    grid-template-areas: "imagen" "texto";
+    grid-template-columns: 1fr;
+  }
+}
+/* Estilos Indice de productos (productos.html) */
+.bgcIndice, .imagenFondo {
+  background-image: url(../images/logo/SportsideNew.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  background-color: black;
+}
+
+.estiloIndice {
+  background-color: #c8ced4;
+}
+.estiloIndice .estiloIndiceTitulo {
+  background-color: #6c757d;
+  margin-top: 10px;
+  font-size: medium;
+}
+.estiloIndice .estiloIndiceUl {
+  list-style-type: none;
+}
+
+.estiloArriba {
+  text-decoration: none;
+  color: white;
+}
+.estiloArriba:hover {
+  background-color: white;
+}
+
+/* Estilos Contacto Main */
+.imagenFondo {
+  background-image: url(../images/logo/Sporsidev2.png);
+}
+
+/***************************** 
+- Estilo Tarjetas Productos  -
+******************************/
+/* Estilo de las tarjetas de Index.html */
+.estiloTarjetaIndex {
+  background-color: #083D77;
+  color: white;
+}
+
+.estiloBotonTarjeta {
+  background-color: white;
+  color: black;
+}
+
+/*maps*/
+.colorDeFondo1 {
+  background-color: #083D77;
+  color: white;
+}
+
+.colorDeFondo2 {
+  background-color: #083D77;
+  color: white;
+}
+
+.colorDeFondo3 {
+  background-color: #083D77;
+  color: white;
+}
+
+.colorDeFondo4 {
+  background-color: #083D77;
+  color: white;
+}
+
+.colorDeFondo5 {
+  background-color: #083D77;
+  color: white;
+}
+
+/* Mixing de las tarjetas de productos.html*/
+.estiloTarjeta1 {
+  background-color: #083D77;
+  color: white;
+}
+
+.estiloTarjeta2 {
+  background-color: #8a0916;
+  color: white;
+}
+
+.estiloTarjeta3 {
+  background-color: #70019c;
+  color: white;
+}
+
+.fondoPrecio {
+  border: 4px solid white;
+  background-color: #02020a;
+  color: #fcfcfd;
+}
+
+.height100 {
+  height: 100%;
+}
+
+/***************************************
+Estilos de botones (productos.html)
+****************************************/
+.estiloBotonCamisetas, .estiloBotonBotines, .estiloBotonRopa {
+  background: #07fef3;
+  background: linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+  background: -webkit-linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+  background: -moz-linear-gradient(120deg, #07fef3 0%, #ff0027 80%);
+  border-radius: 5px;
+  height: 6vh;
+  color: white;
+  border: 2px solid black;
+}
+.estiloBotonCamisetas:hover, .estiloBotonBotines:hover, .estiloBotonRopa:hover {
+  background: #07fef3;
+  color: black;
+}
+
+.botonAgregadoAlcarrito {
+  background-color: #07fef3;
+  border-radius: 5px;
+  height: auto;
+  color: black;
+  border: 2px solid black;
+}
+
+/***************************** 
+-      Estilo Footer       -
+******************************/
+.bgcfooter {
+  background-color: #083D77;
+  color: lightgray;
+}
+
+.textoFooter {
+  color: dimgrey;
+}
+.textoFooter:hover {
+  color: white;
+  background-color: #032b55;
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+/***************************** 
+-      Estilo de Texto       -
+******************************/
+.alMedio {
+  text-align: center;
+}
+
+.aLaDerecha {
+  text-align: right;
+}
+
+/* Animaciones */
+.tituloAnimado {
+  animation-name: tituloAnimado;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tituloAnimado {
+  0% {
+    transform: translatex(-1000px);
+    opacity: 0;
+  }
+  20% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translatex(0px);
+    transform: rotateX(170deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translatex(1000px);
+    opacity: 0;
+  }
+  90% {
+    transform: translate(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.navAnimado {
+  animation-name: navAnimado;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes navAnimado {
+  from {
+    opacity: 0;
+    transform: translate(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+/* Estilos del Main Contacto */
+.estilosContacto {
+  background-image: url(../images/fondocontacto-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+.estilosContacto .styleTitulo {
+  background-color: #083D77;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #083D77;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+}
+.estilosContacto .estilosFormulario {
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 400px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.estilosContacto .estilosFormulario .estiloInput {
+  border: 1px solid #070707;
+  width: 70%;
+  margin: 10px 0px;
+  box-shadow: 10px;
+}
+.estilosContacto .estilosFormulario .styleButton {
+  background-image: linear-gradient(#01ff6b, #12136b);
+  color: white;
+  padding: 5px;
+  border: 2px black;
+  border-radius: 5px;
+  margin: 10px 0px;
+  width: 35%;
+}
+.estilosContacto .estilosFormulario .styleButton:hover {
+  background-image: linear-gradient(#801a00, #ff0040);
+}
+.estilosContacto .estilosFormulario .styleContentForm {
+  padding: 10px 0px;
+}
+.estilosContacto .estilosFormulario .borderDeSeparacion {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.estilosContacto .estilosFormulario textarea {
+  max-height: 200px;
+  min-height: 150px;
+  max-width: 100%;
+}
+
+@media (max-width: 425px) {
+  .estilosContacto .estilosFormulario {
+    width: 95%;
+    border: 0px;
+  }
+}
+.flexing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.backgroundLogin {
+  background-image: url(../images/4621939-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.estiloLoginTarjeta {
+  border: 2px solid black;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.estiloLoginTarjeta .formTitle h2 {
+  background-color: #083D77;
+  color: white;
+  width: 100%;
+  font-size: large;
+}
+.estiloLoginTarjeta .inputLogin {
+  border: 1px solid #083D77;
+  width: 100%;
+}
+.estiloLoginTarjeta .textoInput {
+  color: black;
+  padding: 5px 0px;
+}
+
+.estiloBotonLogin {
+  background-color: #083D77;
+  width: 50%;
+  color: white;
+}
+.estiloBotonLogin:hover {
+  background-color: #032b55;
+}
+
+.imagenLogoLogin {
+  background-image: url(../images/logo/Sporsidev2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  height: 400px;
+  width: 40%;
+}
+
+.styleLogin {
+  background-color: rgba(253, 117, 6, 0.452);
+  height: 400px;
+}
+
+@media (max-width: 600px) {
+  .estiloLoginTarjeta {
+    border: 2px solid black;
+    width: 80%;
+  }
+
+  .imagenLogoLogin {
+    display: none;
+  }
+}
+/* Estilos Banner Sportside (foto negra despues del nav)*/
+.tituloNosotros {
+  background-image: url(../images/logo/SportsideNew.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40vh;
+  background-color: black;
+}
+
+/* Estilos tarjeta quienes somos */
+.fondoQuienesSomos {
+  background-image: url(../images/imgnosotros/keefikus-t3b5i6gibHo-unsplash-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fondoQuienesSomos .quienesSomos {
+  border: 2px solid black;
+  border-radius: 1px;
+  height: 60vh;
+  padding: 10px 0px;
+  color: white;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.fondoQuienesSomos .fondoH2 {
+  background-color: #083D77;
+  padding: 10px 0px;
+}
+.fondoQuienesSomos .estiloTextoQuienesSomos {
+  padding: 10px 10px;
+}
+
+/* Estilos Objetivo Sobre Nosotros */
+.objetivoSobreNosotros {
+  background-image: url(../images/imgnosotros/andrea-leopardi-QVD3Xht9txA-unsplash-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.objetivoSobreNosotros .quienesSomos {
+  border: 2px solid black;
+  border-radius: 1px;
+  height: 60vh;
+  padding: 10px 0px;
+  color: white;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+.objetivoSobreNosotros .fondoH2 {
+  background-color: #083D77;
+  padding: 10px 0px;
+}
+.objetivoSobreNosotros .estiloTextoQuienesSomos {
+  padding: 10px 10px;
+}
+
+/* ESTILOS ASIDE SOBRE NOSOTROS  */
+.publiNosotros {
+  background-image: url(../images/logo/Sportside-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+@media (max-width: 500px) {
+  .publiNosotros {
+    background-image: url(../images/logo/Sportside-banner320.png);
+  }
+}
+@media (max-width: 600px) {
+  .fondoQuienesSomos .quienesSomos {
+    width: 95%;
+    height: auto;
+  }
+
+  .objetivoSobreNosotros .quienesSomos {
+    width: 95%;
+  }
+}
+.estiloThead {
+  background-color: #083D77;
+  color: white;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.th {
+  background-color: #083D77;
+  color: white;
+  margin: 20px;
+}
+
+.estilosTr {
+  background-color: rgba(241, 241, 241, 0.801);
+}
+
+.contenedorCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/4621939-min.jpg);
+  background-attachment: fixed;
+}
+
+.estilosTabla {
+  box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 18px 15px rgba(0, 0, 0, 0.75);
+}
+
+.estiloOrdenarPor {
+  background-color: rgba(0, 0, 0, 0.849);
+  margin: 10px 0px;
+  color: white;
+  padding: 10px;
+}
+
+.botonOrdenarPor {
+  border: 3px solid black;
+  color: black;
+  border-radius: 10px;
+  background: #05445e;
+  background: linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+  background: -webkit-linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+  background: -moz-linear-gradient(90deg, #05445e 0%, #189ab4 40%, #75e6da 80%);
+}
+
+.botonOrdenarPor:hover {
+  color: white;
+  transition: 2s;
+}
+
+.estilosBotonCantidadMas {
+  height: 28px;
+  width: 28px;
+  background-color: #0fcc0f;
+  color: black;
+}
+
+.estilosBotonCantidadMenos {
+  height: 28px;
+  width: 28px;
+  background-color: red;
+  color: white;
+}
+
+.estilosDivCheckout {
+  border: 3px solid black;
+  color: black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.849);
+  margin: 10px 0px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=destino.css.map */
